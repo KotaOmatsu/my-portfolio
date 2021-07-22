@@ -4,12 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/sozai_cman_jp_20210721093510.png" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="js/slick/slick.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kota's Portfolio</title>
   </head>
   <body>
-    <h1>aaa</h1>
-    <script src="main.js"></script>
+    <header id="header">
+      <div class="inner">
+        <a href="#">
+          <h1 class="site-title">Kota</h1>
+        </a>
+        <nav>
+          <ul>
+            <a href="#about" class="about"><li>ABOUT</li></a>
+            <a href="#works" class="works"><li>WORKS</li></a>
+            <a href="#skills" class="skills"><li>SKILLS</li></a>
+            <a href="#share" class="share"><li>SHARE</li></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="mainvisual">
+      <div class="main-text">
+        <div class="main-text">
+          <h2 class="text">KOTA <br />OMATSU<br /></h2>
+          <a href="#about" class="about"><span></span>Scroll</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="wrapper">
+      <h3 class="section-title">ABOUT</h3>
+
+      <div class="prof">
+        <ul class="prof-text">
+          <li>Name : Kota Omatsu</li>
+          <li>School : Nagoya city university</li>
+          <li>Age : 18 years old</li>
+          <li>Food : cake🍰</li>
+          <li>Comment : Hello🔥</li>
+        </ul>
+        <img
+          class="prof-img"
+          src="img/6A881A19-01F4-4FA1-B777-471A75512891_4_5005_c.jpeg"
+          alt="kota-image"
+        />
+      </div>
+    </section>
+
+    <section id="works" class="wrapper">
+      <h3 class="section-title">WORKS</h3>
+      <ul class="slider">
+        <li>
+          <video muted autoplay loop>
+            <source src="img/World - 1992.mp4" />
+          </video>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="img/fantasy-4191425_1920.jpg" alt="fantast-space"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/saturn-54999.jpg" alt="saturn" /></a>
+        </li>
+        <li>
+          <video muted autoplay loop>
+            <source src="img/Earth And Moon - 25663.mp4" />
+          </video>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="img/wormhole-2514312_1920.jpg" alt="wormhole"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/earth-1151659_1920.jpg" alt="earth" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="wrapper">
+      <h3 class="section-title">SKILLS</h3>
+      <ul class="images">
+        <li>
+          <img src="img/file_type_html_icon_130541.png" alt="" />
+        </li>
+        <li><img src="img/file_type_css_icon_130661.png" alt="" /></li>
+        <li><img src="img/sass_original_logo_icon_146350.png" alt="" /></li>
+
+        <li><img src="img/file_type_js_official_icon_130509.png" alt="" /></li>
+        <li><img src="img/wordpress_icon-icons.com_60472.png" alt="" /></li>
+      </ul>
+    </section>
+
+    <section id="share" class="wrapper">
+      <h3 class="section-title">SHARE</h3>
+
+      <ul class="snsbtniti">
+        <li>
+          <a href="https://twitter.com" class="sns twitter"
+            ><i class="fab fa-twitter"></i>
+            <div>Twitter</div></a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/?hl=ja" class="sns insta"
+            ><i class="fab fa-instagram"></i>
+            <div>Instagram</div></a
+          >
+        </li>
+        <li>
+          <a href="https://ja-jp.facebook.com/" class="sns facebook"
+            ><i class="fab fa-facebook-f"></i>
+            <div>Facebook</div></a
+          >
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/?hl=JA" class="sns youtube"
+            ><i class="fab fa-youtube"></i>
+            <div>YouTube</div></a
+          >
+        </li>
+      </ul>
+    </section>
+    <footer id="footer">
+      <p class="copyright">&copy;Kota-Omatsu</p>
+    </footer>
+    <p class="button"></p>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(
+        ".section-title .prof-text .prof-img .slider .images .snsbtniti .inner #mainvisual #share"
+      );
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
