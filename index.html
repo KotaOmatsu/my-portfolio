@@ -13,6 +13,12 @@
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Kota's Portfolio</title>
   </head>
@@ -24,10 +30,10 @@
         </a>
         <nav>
           <ul>
-            <a href="#about" class="about"><li>ABOUT</li></a>
-            <a href="#works" class="works"><li>WORKS</li></a>
-            <a href="#skills" class="skills"><li>SKILLS</li></a>
-            <a href="#share" class="share"><li>SHARE</li></a>
+            <a href="#about"><li>ABOUT</li></a>
+            <a href="#works"><li>WORKS</li></a>
+            <a href="#skills"><li>SKILLS</li></a>
+            <a href="#share"><li>SHARE</li></a>
           </ul>
         </nav>
       </div>
@@ -139,6 +145,43 @@
       </ul>
     </section>
     <footer id="footer">
+      <div class="list">
+        <h2 class="text">THANK YOU FOR VISITING THIS SITE!</h2>
+
+        <ul class="link">
+          <a href="#"><li>T O P</li></a>
+          <a href="#about"><li>A B O U T</li></a>
+          <a href="#works"><li>W O R K S</li></a>
+          <a href="#skills"><li>S K I L L S</li></a>
+          <a href="#share"><li>S H A R E</li></a>
+        </ul>
+
+        <ul class="sns-icon">
+          <p>FOLLOW ME</p>
+          <li>
+            <a href="https://twitter.com" class="sns twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/?hl=ja" class="sns insta"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://ja-jp.facebook.com/" class="sns facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/?hl=JA" class="sns youtube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
       <p class="copyright">&copy;Kota-Omatsu</p>
     </footer>
     <p class="button"></p>
@@ -150,7 +193,7 @@
     <script>
       window.sr = ScrollReveal();
       sr.reveal(
-        ".section-title .prof-text .prof-img .slider .images .snsbtniti .inner #mainvisual #share"
+        ".section-title .prof-text .prof-img .slider .images .snsbtniti #header #mainvisual #share"
       );
     </script>
     <script src="js/main.js"></script>
