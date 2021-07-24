@@ -232,6 +232,7 @@ body .active {
 @-webkit-keyframes sdb {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
   }
   50% {
@@ -239,6 +240,7 @@ body .active {
   }
   100% {
     -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
 }
@@ -349,11 +351,73 @@ body .active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 1;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
   z-index: 2;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-animation: shake 0.6s forwards;
+          animation: shake 0.6s forwards;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  25% {
+    -webkit-transform: rotate(-20deg) scale(1.1);
+            transform: rotate(-20deg) scale(1.1);
+  }
+  50% {
+    -webkit-transform: rotate(20deg) scale(1.15);
+            transform: rotate(20deg) scale(1.15);
+  }
+  65% {
+    -webkit-transform: rotate(-10deg) scale(1.2);
+            transform: rotate(-10deg) scale(1.2);
+  }
+  80% {
+    -webkit-transform: rotate(10deg) scale(1.2);
+            transform: rotate(10deg) scale(1.2);
+  }
+  90% {
+    -webkit-transform: rotate(-5deg) scale(1.2);
+            transform: rotate(-5deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1.2);
+            transform: rotate(0deg) scale(1.2);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  25% {
+    -webkit-transform: rotate(-20deg) scale(1.1);
+            transform: rotate(-20deg) scale(1.1);
+  }
+  50% {
+    -webkit-transform: rotate(20deg) scale(1.15);
+            transform: rotate(20deg) scale(1.15);
+  }
+  65% {
+    -webkit-transform: rotate(-10deg) scale(1.2);
+            transform: rotate(-10deg) scale(1.2);
+  }
+  80% {
+    -webkit-transform: rotate(10deg) scale(1.2);
+            transform: rotate(10deg) scale(1.2);
+  }
+  90% {
+    -webkit-transform: rotate(-5deg) scale(1.2);
+            transform: rotate(-5deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1.2);
+            transform: rotate(0deg) scale(1.2);
+  }
 }
 
 #share {
