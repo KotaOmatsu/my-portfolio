@@ -146,8 +146,10 @@ body {
   }
   .main-text {
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 40%;
+    left: 45%;
+    text-shadow: 2px 2px 20px #000;
+    letter-spacing: 1.5em;
     .text {
       color: #fff;
       font-size: 5em;
@@ -163,17 +165,17 @@ body {
       color: #f0f0f0;
       position: relative;
       bottom: -7rem;
-      left: -2rem;
+      // left: -2rem;
       z-index: 2;
       display: inline-block;
-      -webkit-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+      -webkit-transform: translate(-22%, -30%);
+      transform: translate(-22%, -30%);
       text-decoration: none;
       padding: 70px;
       span {
         position: absolute;
         top: 0;
-        left: 50%;
+        left: 60%;
         width: 24px;
         height: 24px;
         margin-left: -12px;
@@ -243,7 +245,10 @@ body {
 
 #works {
   margin-bottom: 200px;
-
+  p {
+    text-shadow: none;
+    text-align: center;
+  }
   .slider {
     margin: 2rem auto;
     width: 70%;
