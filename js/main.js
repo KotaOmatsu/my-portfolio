@@ -10,7 +10,7 @@ $(function () {
     autoplaySpeed: 5000,
   });
 
-  const IdArray = ["#about", "#works", "#skills", "#share"];
+  const IdArray = ["#about", "#works", "#skills", "#share", "#"];
 
   for (let i = 0; i < IdArray.length; i++) {
     $(`a[href^="${IdArray[i]}"]`).click(function () {
