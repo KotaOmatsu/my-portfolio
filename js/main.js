@@ -1,6 +1,6 @@
 $(function () {
   // text fade
-  $(".main-text").delay(2000).hide().fadeIn(1000);
+  $(".main-text").delay(2000).hide().fadeIn(999);
   // ripples
   $("#share").ripples();
   // slid
